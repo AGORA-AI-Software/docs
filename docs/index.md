@@ -1,14 +1,49 @@
+---
+title: Agora Developer Docs
+description: Webhooks, SDKs, and API reference for the Agora platform.
+---
+
 # Agora Developer Docs
 
-Welcome to the Agora developer documentation. Here you'll find everything you need to integrate with the Agora platform.
+Everything you need to integrate with the Agora platform.
 
-## What's here
+<div class="grid cards" markdown>
 
-| Section | Description |
-|---|---|
-| [Webhooks](webhooks/index.md) | Receive real-time HTTP notifications when events occur in your campaigns |
-| [Privacy Policy](policies/privacy.md) | How Agora handles your data |
-| [Security Acknowledgement](policies/security.md) | Responsible disclosure and security practices |
+-   :material-webhook:{ .lg .middle } __Webhooks__
+
+    ---
+
+    Receive real-time HTTP POST notifications for leads, calls, and form submissions.
+
+    [:octicons-arrow-right-24: Webhook docs](webhooks/index.md)
+
+-   :material-code-braces:{ .lg .middle } __SDKs__
+
+    ---
+
+    Generated clients for Python, TypeScript, Java, and Go — authenticate and upload leads in minutes.
+
+    [:octicons-arrow-right-24: SDK docs](sdk/index.md)
+
+-   :material-api:{ .lg .middle } __API Reference__
+
+    ---
+
+    Interactive Swagger UI with every endpoint, schema, and try-it-out capability.
+
+    [:octicons-arrow-right-24: Open API reference](api/index.md)
+
+-   :material-shield-check:{ .lg .middle } __Policies__
+
+    ---
+
+    Privacy policy and security acknowledgement for the Agora platform.
+
+    [:octicons-arrow-right-24: Privacy](policies/privacy.md) · [:octicons-arrow-right-24: Security](policies/security.md)
+
+</div>
+
+---
 
 ## Need help?
 

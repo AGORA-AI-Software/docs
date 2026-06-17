@@ -1,6 +1,6 @@
 site_name: Agora Docs
 site_url: https://docs.agoraai.tech
-site_description: Developer documentation for the Agora platform — webhooks, API reference, and integration guides.
+site_description: Developer documentation for the Agora platform — webhooks, SDKs, API reference, and integration guides.
 repo_url: https://github.com/AGORA-AI-Software/docs
 repo_name: AGORA-AI-Software/docs
 edit_uri: edit/main/
@@ -23,43 +23,117 @@ theme:
   font:
     text: Inter
     code: Fira Code
+  icon:
+    repo: fontawesome/brands/github
+    annotation: material/chevron-right-circle
   features:
     - navigation.instant
+    - navigation.instant.progress
     - navigation.sections
     - navigation.top
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.footer
     - search.highlight
     - search.suggest
+    - search.share
     - content.code.copy
+    - content.code.annotate
     - content.action.edit
+    - content.tooltips
+    - toc.follow
 
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/swagger.js
+
+plugins:
+  - search:
+      lang: en
+  - tags
+
 markdown_extensions:
+  # Code blocks
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.inlinehilite
+
+  # Tabs
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.inlinehilite
+      combine_header_slug: true
+
+  # Admonitions
   - admonition
   - pymdownx.details
-  - tables
+
+  # Annotations
   - attr_list
+  - md_in_html
+
+  # Text formatting
+  - pymdownx.mark
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.keys
+
+  # Lists
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - def_list
+
+  # Tooltips & snippets
+  - abbr
+  - pymdownx.snippets:
+      base_path: docs
+      auto_append:
+        - includes/abbreviations.md
+  - footnotes
+
+  # Emoji & icons
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  # TOC
   - toc:
       permalink: true
+      title: On this page
+
+  # Tables
+  - tables
 
 nav:
   - Home: index.md
+  - SDK:
+    - sdk/index.md
+    - Quick Start: sdk/quickstart.md
+    - Python: sdk/python.md
+    - TypeScript: sdk/typescript.md
+    - Java: sdk/java.md
+    - Go: sdk/go.md
+    - CLI (Restish): sdk/cli.md
+    - Models Reference: sdk/reference.md
+  - API Reference: api/index.md
   - Webhooks:
-    - Overview: webhooks/index.md
+    - webhooks/index.md
     - Quick Start: webhooks/quickstart.md
     - Signature Verification: webhooks/signature-verification.md
     - Event Reference: webhooks/events.md
     - Idempotency: webhooks/idempotency.md
     - Secret Rotation: webhooks/secret-rotation.md
-    - API Reference: webhooks/api.md
+    - REST API: webhooks/api.md
   - Policies:
     - Privacy Policy: policies/privacy.md
     - Security Acknowledgement: policies/security.md
