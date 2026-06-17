@@ -1,6 +1,17 @@
-# Webhooks API Reference
+---
+title: Webhook REST API
+description: REST API for managing webhook endpoints and replaying deliveries.
+tags:
+  - webhooks
+  - reference
+---
 
-All paths are under `/api/v1`. Authentication requires a Bearer JWT.
+# Webhook REST API
+
+!!! tip "Try it interactively"
+    All webhook management endpoints are available in the [interactive API reference](../api/index.md). Expand any endpoint and click **Try it out** to make live requests.
+
+All paths are under `/api/v1`. Authentication requires a Bearer JWT — see the [Quick Start](../sdk/quickstart.md) for how to obtain one.
 
 ## Endpoints
 
@@ -16,28 +27,11 @@ All paths are under `/api/v1`. Authentication requires a Bearer JWT.
 | `POST` | `/campaigns/{id}/webhooks/endpoints/{eid}/regenerate-secret` | Rotate the signing secret — returns new secret **once** |
 | `POST` | `/campaigns/{id}/webhooks/deliveries/{did}/redeliver` | Redeliver a past delivery (one attempt, no retry) |
 
-## Test from the command line
-
-```bash
-TOKEN="<your dev-login or Firebase JWT>"
-CAMPAIGN_ID=1
-ENDPOINT_ID=42
-
-# Send a test ping
-curl -s -X POST \
-  "http://localhost:8000/api/v1/campaigns/$CAMPAIGN_ID/webhooks/endpoints/$ENDPOINT_ID/test" \
-  -H "Authorization: Bearer $TOKEN" | jq .
-```
+!!! info "Coming soon in the public API"
+    Webhook management endpoints will be added to the public OpenAPI spec and Swagger UI in an upcoming release, enabling programmatic endpoint management via SDK and CLI in addition to the dashboard.
 
 ## Redeliver a failed delivery
 
 Open the campaign's **Webhooks** tab and expand the endpoint row. The **Deliveries** sub-table shows all past attempts. Click the **↻** (redeliver) button on any row to fire a new delivery with the original payload.
-
-You can also redeliver via the API:
-
-```
-POST /api/v1/campaigns/{campaign_id}/webhooks/deliveries/{delivery_id}/redeliver
-Authorization: Bearer <token>
-```
 
 A new delivery record is created; the original delivery is preserved unchanged.

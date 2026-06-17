@@ -1,0 +1,17 @@
+name: Improvement
+description: Existing docs that could be clearer, better organized, or more complete.
+labels: ["improvement"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Affected page
+      placeholder: https://docs.agoraai.tech/webhooks/
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What could be improved?
+    validations:
+      required: true

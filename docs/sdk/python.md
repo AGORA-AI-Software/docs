@@ -8,7 +8,7 @@ tags:
 
 # Python SDK
 
-:fontawesome-brands-python: Python client for the Agora Public API.
+:fontawesome-brands-python: Python client for the Agora Public API. [:fontawesome-brands-github: Source](https://github.com/AGORA-AI-Software/sdk/tree/main/sdks/python){ .md-button }
 
 ## Install
 

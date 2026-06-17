@@ -1,0 +1,24 @@
+name: New content request
+description: Request new documentation — a new guide, page, or section.
+labels: ["enhancement"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: What should be documented?
+      placeholder: e.g. "How to handle webhook retries in Lambda"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Why is this needed?
+      description: Who would use this and what problem does it solve?
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes or references
+    validations:
+      required: false
