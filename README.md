@@ -10,6 +10,8 @@ Public-facing documentation for the [Agora](https://agoraai.tech) platform — w
 
 | Path | Published at | Description |
 |---|---|---|
+| `docs/sdk/` | [/sdk](https://docs.agoraai.tech/sdk/) | SDK quick start, per-language docs (Python, TypeScript, Java, Go), CLI, and models reference |
+| `docs/api/` | [/api](https://docs.agoraai.tech/api/) | Interactive Swagger UI for the Agora public API |
 | `docs/webhooks/` | [/webhooks](https://docs.agoraai.tech/webhooks/) | Webhook integration guide (quick start, signature verification, event reference, idempotency, secret rotation, API) |
 | `docs/policies/privacy.md` | [/policies/privacy/](https://docs.agoraai.tech/policies/privacy/) | Privacy policy |
 | `docs/policies/security.md` | [/policies/security/](https://docs.agoraai.tech/policies/security/) | Security acknowledgement and responsible disclosure |
@@ -33,7 +35,6 @@ Open [http://localhost:8000](http://localhost:8000). Changes hot-reload.
 2. Open a pull request against `main`
 3. The site deploys automatically via GitHub Actions once merged
 
-For policy pages (`docs/policies/`), merging to `main` will also notify the marketing team to sync the updated content to the Framer site. See [PUBLISHING.md](PUBLISHING.md) for the full workflow.
 
 ## Found an issue?
 
