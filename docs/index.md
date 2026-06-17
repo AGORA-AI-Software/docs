@@ -12,4 +12,4 @@ Welcome to the Agora developer documentation. Here you'll find everything you ne
 
 ## Need help?
 
-Reach out to [support@agoraai.tech](mailto:support@agoraai.tech) or open an issue in our [tracker](https://github.com/AGORA-AI-Software/tracker).
+Reach out to [support@agoraai.tech](mailto:support@agoraai.tech) or [open an issue](https://github.com/AGORA-AI-Software/docs/issues/new) in this repo.
