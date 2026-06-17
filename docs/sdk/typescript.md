@@ -9,7 +9,7 @@ tags:
 
 # TypeScript SDK
 
-:fontawesome-brands-js: TypeScript/JavaScript client for the Agora Public API. Works in Node.js and any bundler that supports ES modules.
+:fontawesome-brands-js: TypeScript/JavaScript client for the Agora Public API. Works in Node.js and any bundler that supports ES modules. [:fontawesome-brands-github: Source](https://github.com/AGORA-AI-Software/sdk/tree/main/sdks/typescript){ .md-button }
 
 ## Install
 
