@@ -73,3 +73,11 @@ API Key  ──(POST /auth/api-key/token)──►  Bearer token (short-lived JW
 |---|---|
 | Production | `https://core.agoraai.tech/api/v1` |
 | Development | `https://core-dev.agoraai.tech/api/v1` |
+
+---
+
+## Found a bug or have a feature request?
+
+Open an issue in the [sdk repo](https://github.com/AGORA-AI-Software/sdk/issues/new) — that's where SDK bugs, feature requests, and OpenAPI contract changes are tracked.
+
+For docs corrections, [open an issue here](https://github.com/AGORA-AI-Software/docs/issues/new).
