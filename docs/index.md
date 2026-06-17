@@ -7,6 +7,7 @@ Welcome to the Agora developer documentation. Here you'll find everything you ne
 | Section | Description |
 |---|---|
 | [Webhooks](webhooks/index.md) | Receive real-time HTTP notifications when events occur in your campaigns |
+| [SDKs](sdks/index.md) | Python, TypeScript, Java, and Go clients for the Agora public API |
 | [Privacy Policy](policies/privacy.md) | How Agora handles your data |
 | [Security Acknowledgement](policies/security.md) | Responsible disclosure and security practices |
 

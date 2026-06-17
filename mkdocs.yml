@@ -60,6 +60,7 @@ nav:
     - Idempotency: webhooks/idempotency.md
     - Secret Rotation: webhooks/secret-rotation.md
     - API Reference: webhooks/api.md
+  - SDKs: sdks/index.md
   - Policies:
     - Privacy Policy: policies/privacy.md
     - Security Acknowledgement: policies/security.md
