@@ -1,6 +1,75 @@
+/* Agora brand tokens */
 :root {
-  --md-primary-fg-color: #1a1a2e;
-  --md-primary-fg-color--light: #16213e;
-  --md-primary-fg-color--dark: #0f3460;
-  --md-accent-fg-color: #6c63ff;
+  --agora-purple-900: #140730;
+  --agora-purple-800: #280D5F;
+  --agora-purple-600: #4F1ABE;
+  --agora-purple-500: #6321EE;
+  --agora-purple-400: #804CF1;
+  --agora-purple-300: #9D76F5;
+  --agora-mint-500:   #7FFFD3;
+  --agora-mint-600:   #66CCA9;
+  --agora-neutral-900: #070506;
+  --agora-surface-500: #E8EAF2;
+}
+
+/* ── Light scheme ─────────────────────────────────────────── */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        var(--agora-purple-500);
+  --md-primary-fg-color--light: var(--agora-purple-400);
+  --md-primary-fg-color--dark:  var(--agora-purple-800);
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: #ffffff;
+
+  --md-accent-fg-color:         var(--agora-mint-600);
+  --md-accent-fg-color--transparent: rgba(127, 255, 211, 0.1);
+
+  --md-typeset-a-color:         var(--agora-purple-500);
+}
+
+/* ── Dark scheme ──────────────────────────────────────────── */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        var(--agora-purple-400);
+  --md-primary-fg-color--light: var(--agora-purple-300);
+  --md-primary-fg-color--dark:  var(--agora-purple-900);
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: #ffffff;
+
+  --md-accent-fg-color:         var(--agora-mint-500);
+  --md-accent-fg-color--transparent: rgba(127, 255, 211, 0.1);
+
+  --md-typeset-a-color:         var(--agora-purple-300);
+
+  /* Darken the page background toward brand dark */
+  --md-default-bg-color:        #110822;
+  --md-default-fg-color:        rgba(255, 255, 255, 0.87);
+  --md-default-fg-color--light: rgba(255, 255, 255, 0.54);
+  --md-default-fg-color--lighter: rgba(255, 255, 255, 0.32);
+
+  --md-code-bg-color:           #1a1030;
+  --md-code-fg-color:           #e8e0ff;
+}
+
+/* ── Code blocks: mint accents on purple bg ───────────────── */
+[data-md-color-scheme="slate"] .highlight {
+  background-color: #1a1030;
+}
+
+/* ── Nav header: solid brand purple ──────────────────────── */
+.md-header {
+  background-color: var(--agora-purple-900);
+}
+
+[data-md-color-scheme="default"] .md-header {
+  background-color: var(--agora-purple-800);
+}
+
+/* ── Sidebar active item: mint underline ─────────────────── */
+.md-nav__link--active {
+  color: var(--md-accent-fg-color) !important;
+  font-weight: 600;
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
+.md-footer {
+  background-color: var(--agora-purple-900);
 }
