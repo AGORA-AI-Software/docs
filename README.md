@@ -33,7 +33,6 @@ Open [http://localhost:8000](http://localhost:8000). Changes hot-reload.
 2. Open a pull request against `main`
 3. The site deploys automatically via GitHub Actions once merged
 
-For policy pages (`docs/policies/`), merging to `main` will also notify the marketing team to sync the updated content to the Framer site. See [PUBLISHING.md](PUBLISHING.md) for the full workflow.
 
 ## Found an issue?
 
