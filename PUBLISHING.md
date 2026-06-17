@@ -77,7 +77,7 @@ docs/                  # Technical docs — auto-published to docs.agoraai.tech
   index.md             # Landing page
   webhooks/            # Webhook integration guide (Diataxis structure)
   stylesheets/         # Custom CSS
-policies/              # Policy pages — marketing syncs these to Framer
+docs/policies/         # Policy pages — marketing syncs these to Framer
   privacy.md
   security.md
 mkdocs.yml             # MkDocs configuration
