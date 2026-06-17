@@ -8,7 +8,7 @@ tags:
 
 # Java SDK
 
-:fontawesome-brands-java: Java client for the Agora Public API.
+:fontawesome-brands-java: Java client for the Agora Public API. [:fontawesome-brands-github: Source](https://github.com/AGORA-AI-Software/sdk/tree/main/sdks/java){ .md-button }
 
 !!! info "Requirements"
     Java 11 or higher.

@@ -8,7 +8,7 @@ tags:
 
 # Go SDK
 
-:fontawesome-brands-golang: Go client for the Agora Public API.
+:fontawesome-brands-golang: Go client for the Agora Public API. [:fontawesome-brands-github: Source](https://github.com/AGORA-AI-Software/sdk/tree/main/sdks/go){ .md-button }
 
 !!! info "Requirements"
     Go 1.21 or higher.

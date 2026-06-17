@@ -68,7 +68,7 @@ Fires once when multiple leads are created in a single API call or CSV upload. N
 }
 ```
 
-## Delivery behaviour
+## Delivery behavior
 
 | Property | Value |
 |---|---|

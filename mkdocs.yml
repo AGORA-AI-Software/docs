@@ -124,6 +124,7 @@ nav:
     - Java: sdk/java.md
     - Go: sdk/go.md
     - CLI (Restish): sdk/cli.md
+    - AI Agent Plugins: sdk/ai-plugins.md
     - Models Reference: sdk/reference.md
   - API Reference: api/index.md
   - Webhooks:

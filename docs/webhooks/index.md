@@ -31,7 +31,7 @@ Agora webhooks let your server receive real-time HTTP POST notifications wheneve
 
     ---
 
-    All event types, request headers, payload shapes, and delivery behaviour.
+    All event types, request headers, payload shapes, and delivery behavior.
 
     [:octicons-arrow-right-24: Event reference](events.md)
 
