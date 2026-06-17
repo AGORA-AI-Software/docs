@@ -11,10 +11,23 @@ theme:
     - scheme: default
       primary: custom
       accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: Fira Code
   features:
     - navigation.instant
     - navigation.sections
     - navigation.top
+    - navigation.tabs
     - search.highlight
     - search.suggest
     - content.code.copy
