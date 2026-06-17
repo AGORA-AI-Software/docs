@@ -1,0 +1,54 @@
+site_name: Agora Docs
+site_url: https://docs.agoraai.tech
+site_description: Developer documentation for the Agora platform — webhooks, API reference, and integration guides.
+repo_url: https://github.com/AGORA-AI-Software/docs
+repo_name: AGORA-AI-Software/docs
+edit_uri: edit/main/
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.action.edit
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - admonition
+  - pymdownx.details
+  - tables
+  - attr_list
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Webhooks:
+    - Overview: webhooks/index.md
+    - Quick Start: webhooks/quickstart.md
+    - Signature Verification: webhooks/signature-verification.md
+    - Event Reference: webhooks/events.md
+    - Idempotency: webhooks/idempotency.md
+    - Secret Rotation: webhooks/secret-rotation.md
+    - API Reference: webhooks/api.md
+  - Policies:
+    - Privacy Policy: policies/privacy.md
+    - Security Acknowledgement: policies/security.md
