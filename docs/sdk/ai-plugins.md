@@ -80,6 +80,30 @@ See the [SDK Quick Start](quickstart.md) for full examples in every language.
 
 ---
 
+### `agora-webhook-api`
+
+Queries **webhook configuration and delivery health** via the public API. Covers all three read-only observability endpoints.
+
+Use when: a user wants to list their webhook endpoints, check what event types are available, or monitor delivery health and success rates for a campaign.
+
+```bash
+# List event types you can subscribe to
+restish agora list-webhook-event-types $CAMPAIGN_ID
+
+# List configured endpoints (no secrets returned)
+restish agora list-webhook-endpoints $CAMPAIGN_ID
+
+# Check delivery health — alert on success_rate < 0.95
+restish agora get-webhook-endpoint-health $CAMPAIGN_ID $ENDPOINT_ID
+```
+
+!!! note
+    Creating, updating, deleting, testing, or rotating secrets for endpoints is done through the Agora dashboard — those are not public API operations.
+
+See the [Webhook REST API](../webhooks/api.md) for full examples in curl, Restish, and Python.
+
+---
+
 ## How agents use these plugins
 
 The skills are pre-reviewed against the live OpenAPI contract and regenerated on each SDK release. When an AI assistant uses these skills it produces accurate examples that match the current API surface — including correct field names, auth patterns, and compliance requirements — rather than hallucinating from general training data.
